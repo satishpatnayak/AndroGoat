@@ -80,15 +80,21 @@ class TrafficActivity : AppCompatActivity() {
 
 
     fun run(url: String) {
-        val request = Request.Builder()
-                .url(url)
-                .build()
-        //Toast.makeText(this, "Request sent to "+url+" Please intercept using Proxy", Toast.LENGTH_LONG).show()
+        try {
+            val request = Request.Builder()
+                    .url(url)
+                    .build()
+            Toast.makeText(this, "Request sent to "+url+" Please intercept using Proxy", Toast.LENGTH_LONG).show()
 
-        client.newCall(request).enqueue(object : Callback {
-            override fun onFailure(call: Call, e: IOException) {}
-            override fun onResponse(call: Call, response: Response) = println(response.body()?.string())
-        })
+            client.newCall(request).enqueue(object : Callback {
+                override fun onFailure(call: Call, e: IOException) {}
+                override fun onResponse(call: Call, response: Response) = println(response.body()?.string())
+            })
+        }
+        catch (e:Exception)
+        {
+            e.printStackTrace()
+        }
     }//run
 
   fun doPinning()
