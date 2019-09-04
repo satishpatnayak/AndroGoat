@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">AndroGoat - Insecure App (Kotlin)</string>
+    <string name="WelcomeText"><b>AndroGoat</b> is purposely developed open source vulnerable/insecure app using Kotlin. Security Testers/Professionals/Enthusiasts, Developers...etc. can use this application to understand and defend the vulnerabilities in Android platform. This is the first vulnerable app developed using Kotlin.\nIf you are looking to learn Android Application Security Testing then AndroGoat is a perfect solution. \n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;***<b>Happy Learning</b>***\n \n</string>
+    <string name="rootHint"><b>Objectives:</b> \n 1. Understand what is Rooting \n 2. How app can detect if device is Rooted? \n 3. Bypass Root Detection using \n &#160;&#160;&#160;3.1 RootCloack \n&#160;&#160;&#160; 3.2 Repackaging \n &#160;&#160;&#160;3.3 Frida \n \n \n Click on \'Check Root\' button"</string>
+    <string name="EmulatorHint"><b>Objectives:</b> \n 1. Understand what is Emulator \n 2. How app can detect if device is Emulator? \n 3. Bypass Emulator Detection using \n &#160;&#160;&#160;3.1 RootCloack \n&#160;&#160;&#160; 3.2 Repackaging \n &#160;&#160;&#160;3.3 Frida \n \n \n Click on \'Check Emulator\' button"</string>
+    <string name="LogsHint"><b>Objectives:</b> \n 1. What info is Logged \n 2. Vulnerable Code \n 3. Risk associated with it </string>
+    <string name="xssHint"><b>Objectives:</b> \n 1.Understand Cross-Site Scripting(XSS) in Android application \n 2. Identify XSS \n 3.Vulnerable Code</string>
+    <string name="SQLiHint"><b>Objectives:</b> \n 1.Understand SQL Injection (Local)\n 2. Identify SQL Injection \n 3. Vulnerable Code \n 4. Find all users.\n<b> Note:</b> Please complete \'Insecure Storage - SQLite\' exercise and ensure minimum 2 users are created\n\n</string>
+    <string name="WebViewHint"><b>Objectives:</b> \n 1.Understand What is WebView \n 2. Access sensitive info using URL aprt from Web URL \n 3. Understand what is setAllowFileAccess for WebView \n\n</string>
+    <string name="SPHint"><b>Objectives:</b> \n 1. What is Shared Preferences? \n 2. Identify how/where sensitive information is stored \n 3. Vulnerable Code \n 4. Risk associated with it</string>
+    <string name="CPHint">In this exercise, we are going learn how data can be stored into Content Providers preferences.</string>
+    <string name="SP1Hint"><b>Objectives:</b>Go to Next Level by scoring 10000 points. \n Clicking on \'Score\' Button will give you 1 point. Don\'t click score button 10000 times</string>
+    <string name="SQLHint"><b>Objectives:</b> \n 1. What is SQLite Database? \n 2. Identify how/where sensitive information is stored \n 3. Vulnerable Code \n 4. Risk associated with it</string>
+    <string name="TempHint"><b>Objectives:</b> \n 1. Identify how/where sensitive information is stored \n 2. Vulnerable Code</string>
+    <string name="SdcardHint"><b>Objectives:</b> \n 1. What is External Storage? \n 2. Identify how/where sensitive information is stored \n 3. Vulnerable Code \n 4. Risk associated with it</string>
+    <string name="Access1Hint"><b>Objectives:</b> \n 1. Understand what is Unprotected or Exportable Android component( Activity, Services and Broadcast Receivers) \n 2. Login without PIN verification by launching Activity \n 3. Understand Custom URL Scheme \n 4. Login using Custom URL Scheme (Without PIN Verification) \n 5. Download Invoice without PIN verification </string>
+    <string name="HardCodeHint"><b>Objectives:</b> \n1. Find out how/where Promocode is hardcoded. \n2. Enter Promocode to get below product for free</string>
+    <string name="CommunicationHint"><b>Objectives:</b> \n 1. Intercept HTTP Traffic \n 2. Intercept HTTPS Traffic in\n &#160;&#160;&#160;2.1 API 23 or below  \n  &#160;&#160;&#160;2.2  API 24 or above \n  &#160;&#160;&#160;2.3 Understand network_security_config.xml \n 3. Understand and Bypass Certificate Pinning using different tools( Eg: JustTrustMe, TrustMeAlready, Frida, AppMon...etc) </string>
+    <string name="InputValidationsHint">Complete below exercises </string>
+    <string name="InputValidations">Input Validations</string>
+    <string name="oscmd">Input Validations - OS CMD Injection</string>
+    <string name="network">Network Intercepting</string>
+    <string name="xss">Input Validations - XSS</string>
+    <string name="wbviewAccess">Input Validations - WebView</string>
+    <string name="sdCard">External Storage - SDCard</string>
+    <string name="emulator">Emulator Detection</string>
+    <string name="InsecureStorage">Insecure Data Storage</string>
+    <string name="InsecureStorageHint"><b>Objectives: </b> \n 1. What is Insecure Data Storage? \n 2. Understand different storage mechanism available \n 3. Identify how sensitive information is stored \n 4. Vulnerable Code \n 5.Risk associated with it </string>
+    <string name="sp1">Shared Preferences -Part1</string>
+    <string name="sp2">Shared Preferences -Part2</string>
+    <string name="activity">Unprotected Android Components</string>
+    <string name="tempFile">Temp File</string>
+    <string name="sql">SQLite</string>
+    <string name="SideChannelLeakage">Side Channel Data Leakage</string>
+    <string name="SideChannelLeakageHint"><b>Objectives: </b> \n 1. What is Side Channel Data Leakage? \n 2. Vulnerable Code \n 3. Risk associated with it </string>
+    <string name="sqli">Input Validations - SQLi</string>
+    <string name="logging">Insecure Logging</string>
+    <string name="dict">Keyboard Cache</string>
+    <string name="dictHint"> <b>Objectives:</b>Find where keystroke logs, for username and Password, saved in device</string>
+    <string name="root"><b>Root Detection</b></string>
+    <string name="hardcode">Hardcode Issue</string>
+    <string name="BinaryPatching">Binary Patching</string>
+    <string name="BinaryPatchingHint"><b>Objective:</b> Get Access to Administration functionality</string>
+    <string name="clipboard">Clipboard - Copy and Paste</string>
+    <string name="clipboardHint"><b>Objectives: </b> \n 1. What is Clipboard? \n 2. Vulnerable Code \n 3. Risk associated with it </string>
+    <string name="github">Code is Available at <a href="https://github.com/satishpatnayak/AndroGoat">Github (https://github.com/satishpatnayak/AndroGoat) </a>  </string>
+    <string name="mail">For any suggestions and feedback please <a href="mailto://satishkumarpatnayak@live.com?Subject=AndroGoat - Suggestions and Feedback">satishkumarpatnayak@live.com</a></string>
+    <string name="twitter">Follow me on <a href="https://twitter.com/satish_patnayak">Twitter (https://twitter.com/satish_patnayak) </a></string>
+</resources>

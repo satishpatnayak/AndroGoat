@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WelcomeText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Traffic"
+                android:text="@string/network"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <Button android:id="@+id/AccessControl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+         <Button
+         android:id="@+id/InsecureStorage"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#000000"
+         android:textColor="@android:color/white"
+         android:text="@string/InsecureStorage"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"/>
+
+            <Button android:id="@+id/InputValidations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InputValidations"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <Button android:id="@+id/SideChannelLeakage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/SideChannelLeakage"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+
+
+
+    <Button android:id="@+id/Hardcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hardcode"
+        android:background="#000000"
+android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/rootButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="@string/root"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <Button
+                android:id="@+id/EmulatorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:text="@string/emulator"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BinaryPatching"
+                android:text="@string/BinaryPatching"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/github"
+                android:autoLink="web"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail"
+                android:autoLink="email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twitter"
+                android:autoLink="web"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

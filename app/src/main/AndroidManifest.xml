@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="owasp.sat.agoat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".RootDetectionActivity"
+            android:label="@string/root" />
+        <activity
+            android:name=".InsecureLoggingActivity"
+            android:label="@string/logging" />
+        <activity
+            android:name=".XSSActivity"
+            android:label="@string/xss" />
+        <activity
+            android:name=".SQLinjectionActivity"
+            android:label="@string/sqli" />
+        <activity
+            android:name=".InsecureStorageSharedPrefs"
+            android:label="@string/sp1" />
+        <activity
+            android:name=".InsecureStorageTempActivity"
+            android:label="@string/tempFile" />
+        <activity
+            android:name=".AccessControlIssue1Activity"
+            android:label="@string/activity" />
+        <activity
+            android:name=".AccessControl1ViewActivity"
+            android:label="@string/activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="vulnapp"
+                    android:scheme="androgoat" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ShowDataReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".HardCodeActivity"
+            android:label="@string/hardcode" />
+        <activity
+            android:name=".InsecureStorageSQLiteActivity"
+            android:label="@string/sql" />
+        <activity
+            android:name=".InsecureStorageSharedPrefs1Activity"
+            android:label="@string/sp2" />
+        <activity
+            android:name=".TrafficActivity"
+            android:label="@string/network" />
+        <activity android:name=".ContentProviderActivity" />
+        <activity
+            android:name=".EmulatorDetectionActivity"
+            android:label="@string/emulator" />
+        <activity
+            android:name=".InsecureStorageSDCardActivity"
+            android:label="@string/sdCard" />
+        <activity
+            android:name=".InputValidationsWebViewURLActivity"
+            android:label="@string/wbviewAccess" />
+        <activity
+            android:name=".InputValidationsOSCMDInjectionMain2Activity"
+            android:label="@string/oscmd" />
+
+        <service
+            android:name=".DownloadInvoiceService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".BinaryPatchingActivity"
+            android:label="@string/BinaryPatching" />
+        <activity
+            android:name=".ClipboardActivity"
+            android:label="@string/clipboard" />
+        <activity
+            android:name=".InsecureStorageActivity"
+            android:label="@string/InsecureStorage" />
+        <activity
+            android:name=".SideChannelDataLeakageActivity"
+            android:label="@string/SideChannelLeakage" />
+        <activity
+            android:name=".InputValidationsActivity"
+            android:label="@string/InputValidations" />
+        <activity android:name=".KeyboardCacheActivity" android:label="@string/dict"></activity>
+    </application>
+
+</manifest>
