@@ -37,6 +37,9 @@ class RootDetectionActivity : AppCompatActivity() {
         for(files in file) {
             val f=File(files)
             result=f.exists()
+			if (result) {
+				break
+			}
         }
         return result
     }
