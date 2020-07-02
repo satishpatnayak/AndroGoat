@@ -23,7 +23,6 @@ jobs:
       env:
         WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SCAN_AUTO_BUILD: true
       with:
         output: reports
         type: credscan,kotlin,depscan
