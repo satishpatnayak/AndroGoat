@@ -27,7 +27,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         output: reports
-        type: credscan,kotlin
+        type: credscan,kotlin,depscan
     - uses: actions/upload-artifact@v1
       with:
         name: reports
