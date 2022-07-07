@@ -1,0 +1,35 @@
+# This workflow integrates ShiftLeft Scan with GitHub's code scanning feature
+# ShiftLeft Scan is a free open-source security tool for modern DevOps teams
+# Visit https://slscan.io/en/latest/integrations/github-actions/ for help
+name: ShiftLeft Scan
+
+# This section configures the trigger for the workflow. Feel free to customize depending on your convention
+on:
+  push:
+
+jobs:
+  Scan-Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Java JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'adopt'
+        java-version: 8.0.332+9
+    - name: Android build
+      run: |
+        chmod +x gradlew
+        ./gradlew assembleDebug
+    - name: Perform ShiftLeft Scan
+      uses: ShiftLeftSecurity/scan-action@master
+      env:
+        WORKSPACE: ""
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        output: reports
+        type: credscan,kotlin,depscan
+    - uses: actions/upload-artifact@v1
+      with:
+        name: reports
+        path: reports
