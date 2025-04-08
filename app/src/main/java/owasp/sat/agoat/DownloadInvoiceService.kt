@@ -10,8 +10,9 @@ import android.os.Environment
 import android.os.IBinder
 import android.util.Log
 import android.widget.Toast
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.stopService
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.lang.Thread.sleep
 
 class DownloadInvoiceService : Service() {
@@ -43,23 +44,23 @@ class DownloadInvoiceService : Service() {
     }
 
   fun downloadFile(){
-        doAsync{
-            val url1="https://github.com/satishpatnayak/MyTest/blob/master/AndroGoatInvoice.txt"
-        val url:Uri=Uri.parse(url1)
-        val request=DownloadManager.Request(url)
-        val fileName:String=url.lastPathSegment
-        request.apply{
-        request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI or DownloadManager.Request.NETWORK_MOBILE)
-        request.setTitle(fileName)
-        request.setDescription("The File is downloading...")
-        request.allowScanningByMediaScanner()
+      CoroutineScope(Dispatchers.IO).launch {
+          val url1="https://github.com/satishpatnayak/MyTest/blob/master/AndroGoatInvoice.txt"
+          val url:Uri=Uri.parse(url1)
+          val request=DownloadManager.Request(url)
+          val fileName:String=url.lastPathSegment.orEmpty()
+          request.apply{
+              request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI or DownloadManager.Request.NETWORK_MOBILE)
+              request.setTitle(fileName)
+              request.setDescription("The File is downloading...")
+              request.allowScanningByMediaScanner()
 //            request.setMimeType("images/gif")
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,"${System.currentTimeMillis()}")
-        val manager=getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
-        manager.enqueue(request)
-        }
-        }
+              request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+              request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,"${System.currentTimeMillis()}")
+              val manager=getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+              manager.enqueue(request)
+          }
+      }
     }
 
 

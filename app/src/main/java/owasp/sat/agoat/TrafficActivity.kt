@@ -1,20 +1,16 @@
 package owasp.sat.agoat
 
-import android.content.Context
-import android.os.AsyncTask
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import okhttp3.*
-import org.jetbrains.anko.doAsync
 import java.io.IOException
-import java.net.URL;
-import org.json.JSONException
-import org.json.JSONObject
 
 
 class TrafficActivity : AppCompatActivity() {
@@ -99,21 +95,21 @@ class TrafficActivity : AppCompatActivity() {
 
   fun doPinning()
     {
-        doAsync {
+        CoroutineScope(Dispatchers.IO).launch {
             val url="owasp.org"
             try {
                 val pinner1 = CertificatePinner.Builder()
-                        .add(url, "sha256/gdU/UHClHJBFbIdeKuyHm/Lq/aQvMLyuTtcvTEE/1JQ=")
-                        .add(url, "sha256/YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=")
-                        .add(url, "sha256/Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys=")
-                        .build()
+                    .add(url, "sha256/gdU/UHClHJBFbIdeKuyHm/Lq/aQvMLyuTtcvTEE/1JQ=")
+                    .add(url, "sha256/YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=")
+                    .add(url, "sha256/Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys=")
+                    .build()
                 val client = OkHttpClient.Builder().certificatePinner(pinner1).build()
                 val request = Request.Builder()
-                        .url("https://"+url)
-                        .build()
+                    .url("https://"+url)
+                    .build()
                 //Toast.makeText(this@TrafficActivity, "Request Sent to https://"+url, Toast.LENGTH_LONG).show()
                 val response = client.newCall(request).execute()
-                Log.v("Response", response.body()?.string())
+                Log.v("Response", "${response.body()?.string()}")
             } catch (e: Exception) {
                 //Toast.makeText(this@TrafficActivity, "Pinning Verification Failed", Toast.LENGTH_LONG).show()
                 e.printStackTrace()

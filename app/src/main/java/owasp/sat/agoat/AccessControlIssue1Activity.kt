@@ -2,14 +2,11 @@ package owasp.sat.agoat
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_access_verify_pin.*
-import org.jetbrains.anko.find
 import java.security.MessageDigest
 
 class AccessControlIssue1Activity : AppCompatActivity() {

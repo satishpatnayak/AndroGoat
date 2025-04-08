@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_sqlinjection.*
 import java.lang.Exception
 
 class InsecureStorageSQLiteActivity : AppCompatActivity() {

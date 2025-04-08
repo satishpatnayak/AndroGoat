@@ -1,18 +1,11 @@
 package owasp.sat.agoat
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_insecure_storage_shared_prefs1.*
-import org.w3c.dom.Text
-import java.io.File
-import java.io.StreamCorruptedException
-import java.security.PublicKey
-import java.util.*
 
 class InsecureStorageSharedPrefs1Activity : AppCompatActivity() {
 

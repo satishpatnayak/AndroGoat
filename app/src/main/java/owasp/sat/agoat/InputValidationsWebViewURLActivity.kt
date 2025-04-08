@@ -1,13 +1,10 @@
 package owasp.sat.agoat
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.webkit.WebChromeClient
+import android.support.v7.app.AppCompatActivity
 import android.webkit.WebView
 import android.widget.Button
 import android.widget.TextView
-import org.jetbrains.anko.find
 
 class InputValidationsWebViewURLActivity : AppCompatActivity() {
 
