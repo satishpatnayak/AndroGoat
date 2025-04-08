@@ -1,29 +1,30 @@
 package owasp.sat.agoat
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_input_validations.*
+import android.support.v7.app.AppCompatActivity
+import owasp.sat.agoat.databinding.ActivityInputValidationsBinding
 
 class InputValidationsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_input_validations)
+        val binding = ActivityInputValidationsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        xssBtn.setOnClickListener{
+        binding.xssBtn.setOnClickListener{
             startActivity(Intent (this, XSSActivity::class.java));
         }
 
-        sqliButton.setOnClickListener{
+        binding.sqliButton.setOnClickListener{
             startActivity(Intent (this, SQLinjectionActivity::class.java));
         }
 
-        wbUrl.setOnClickListener{
+        binding.wbUrl.setOnClickListener{
             startActivity(Intent (this, InputValidationsWebViewURLActivity::class.java))
         }
 
-        oscmdi.setOnClickListener{
+        binding.oscmdi.setOnClickListener{
             startActivity(Intent (this, InputValidationsOSCMDInjectionMain2Activity::class.java))
         }
 

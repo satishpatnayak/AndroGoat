@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
-import org.jetbrains.anko.startActivity
 
 class SplashActivity : AppCompatActivity() {
 

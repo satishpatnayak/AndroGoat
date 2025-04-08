@@ -1,32 +1,33 @@
 package owasp.sat.agoat
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_insecure_storage.*
+import android.support.v7.app.AppCompatActivity
+import owasp.sat.agoat.databinding.ActivityInsecureStorageBinding
 
 class InsecureStorageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insecure_storage)
-        SPButton.setOnClickListener{
+        val binding = ActivityInsecureStorageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.SPButton.setOnClickListener{
             startActivity(Intent (this, InsecureStorageSharedPrefs::class.java));
         }
 
-        SP1Button.setOnClickListener{
+        binding.SP1Button.setOnClickListener{
             startActivity(Intent (this, InsecureStorageSharedPrefs1Activity::class.java));
         }
 
-        SQLButton.setOnClickListener{
+        binding.SQLButton.setOnClickListener{
             startActivity(Intent (this, InsecureStorageSQLiteActivity::class.java))
         }
 
-        tempButton.setOnClickListener{
+        binding.tempButton.setOnClickListener{
             startActivity(Intent (this, InsecureStorageTempActivity::class.java));
         }
 
-        SDcardButton.setOnClickListener {
+        binding.SDcardButton.setOnClickListener {
             startActivity(Intent(this, InsecureStorageSDCardActivity::class.java))
         }
     }

@@ -5,16 +5,18 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_insecure_logging.*
+import owasp.sat.agoat.databinding.ActivityInsecureLoggingBinding
 
 class InsecureLoggingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insecure_logging)
+        val binding = ActivityInsecureLoggingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         val username=findViewById<EditText>(R.id.userName);
         val password=findViewById<EditText>(R.id.password);
-        Logging1.setOnClickListener{
+        binding.Logging1.setOnClickListener{
             Log.e("Error:","Error occured when processing Username "+ username.text+"  and Password " +password.text);
             System.out.println("Error: Error occured when processing Username "+ username.text+"  and Password " +password.text);
             Toast.makeText(applicationContext, "Error Occured", Toast.LENGTH_LONG).show();

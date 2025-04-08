@@ -24,7 +24,7 @@ class EmulatorDetectionActivity : AppCompatActivity() {
     }
 
     fun isEmulator(): Boolean {
-            val builddtls = (Build.FINGERPRINT + Build.DEVICE + Build.MODEL + Build.BRAND + Build.PRODUCT + Build.MANUFACTURER + Build.HARDWARE).toLowerCase();
+            val builddtls = (Build.FINGERPRINT + Build.DEVICE + Build.MODEL + Build.BRAND + Build.PRODUCT + Build.MANUFACTURER + Build.HARDWARE).lowercase();
             return (builddtls.contains("generic")
                || builddtls.contains("unknown")
                || builddtls.contains("emulator")
