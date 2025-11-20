@@ -28,11 +28,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
-<<<<<<< HEAD
     <Button android:id="@+id/SQLiButton"
-=======
-    <Button android:id="@+id/SQLiBurron"
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Verify"

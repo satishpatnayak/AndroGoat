@@ -37,29 +37,17 @@
     <Button android:id="@+id/PinningButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:text="Certificate Pinning - OkHttp3"
-=======
-        android:text="Certificate Pinning"
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         android:background="#000000"  android:textColor="@android:color/white"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
-<<<<<<< HEAD
     <Button android:id="@+id/PinningButton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Certificate Pinning - Native"
         android:background="#000000"  android:textColor="@android:color/white"
-=======
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/result"
-        android:text=" "
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>

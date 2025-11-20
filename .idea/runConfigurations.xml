@@ -3,7 +3,6 @@
   <component name="RunConfigurationProducerService">
     <option name="ignoredProducers">
       <set>
-<<<<<<< HEAD
         <option value="com.intellij.execution.junit.AbstractAllInDirectoryConfigurationProducer" />
         <option value="com.intellij.execution.junit.AllInPackageConfigurationProducer" />
         <option value="com.intellij.execution.junit.PatternConfigurationProducer" />
@@ -12,11 +11,6 @@
         <option value="com.intellij.execution.junit.testDiscovery.JUnitTestDiscoveryConfigurationProducer" />
         <option value="org.jetbrains.kotlin.idea.junit.KotlinJUnitRunConfigurationProducer" />
         <option value="org.jetbrains.kotlin.idea.junit.KotlinPatternConfigurationProducer" />
-=======
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
       </set>
     </option>
   </component>

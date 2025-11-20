@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical">
-=======
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/white"
-    xmlns:android="http://schemas.android.com/apk/res/android">
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="15dp"
@@ -50,36 +40,5 @@
         android:background="#000000"
         android:text="Generate and Copy OTP"
         android:textColor="@android:color/white" />
-=======
-        android:text="@string/clipboardHint"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Credit Card:"
-        android:layout_marginTop="45dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cc"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
-
-    <Button android:id="@+id/verifyCC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Generate and Copy OTP"
-        android:background="#000000"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
->>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
 </LinearLayout>
 
