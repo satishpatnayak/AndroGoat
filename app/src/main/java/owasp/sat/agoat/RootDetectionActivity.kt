@@ -1,6 +1,10 @@
 package owasp.sat.agoat
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity
+=======
+import android.support.v7.app.AppCompatActivity
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -15,17 +19,24 @@ class RootDetectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_root_detection)
         val rootBt=findViewById<Button>(R.id.rootCheck);
+<<<<<<< HEAD
         val builder = androidx.appcompat.app.AlertDialog.Builder(this)
         builder.setTitle("Root Detection")
         rootBt.setOnClickListener{
             if(isRooted())// || isRooted1())
             {
                 builder.setMessage("Device is rooted")
+=======
+        rootBt.setOnClickListener{
+            if(isRooted())// || isRooted1())
+            {
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
                 Toast.makeText(applicationContext, "Device is rooted",Toast.LENGTH_LONG).show();
             }
             else
             {
                 Toast.makeText(applicationContext, "Device is not rooted",Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
                 builder.setMessage("Device is not rooted")
             }
             builder.setPositiveButton("OK") { dialog, _ ->
@@ -33,6 +44,9 @@ class RootDetectionActivity : AppCompatActivity() {
             }
             val dialog = builder.create()
             dialog.show()
+=======
+            }
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
 
             }
         }

@@ -47,7 +47,11 @@
     <Button android:id="@+id/TempViewButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Verify"
+=======
+        android:text="Save"
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         android:background="#000000"  android:textColor="@android:color/white"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"

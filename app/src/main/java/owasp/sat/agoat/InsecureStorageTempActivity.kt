@@ -1,8 +1,14 @@
 package owasp.sat.agoat
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+=======
+import android.content.Context
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -18,8 +24,12 @@ class InsecureStorageTempActivity : AppCompatActivity() {
         val savebutton =findViewById<Button>(R.id.TempViewButton);
         val username =findViewById<EditText>(R.id.userName);
         val password= findViewById<EditText>(R.id.password);
+<<<<<<< HEAD
         val builder = androidx.appcompat.app.AlertDialog.Builder(this)
         builder.setTitle("Login")
+=======
+
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         savebutton.setOnClickListener {
             try {
                 val userinfo = File.createTempFile("users", "tmp", File(applicationInfo.dataDir))
@@ -29,6 +39,7 @@ class InsecureStorageTempActivity : AppCompatActivity() {
                 fw.write("username is " + username.text.toString()+ "\n");
                 fw.write("password is " +password.text.toString()+ "\n");
                 fw.close();
+<<<<<<< HEAD
                 builder.setMessage("Username and Password are verified")
                 Toast.makeText(applicationContext, "Username and Password are verified", Toast.LENGTH_LONG).show();
             } catch (e: Exception) {
@@ -41,6 +52,13 @@ class InsecureStorageTempActivity : AppCompatActivity() {
             }
             val dialog = builder.create()
             dialog.show()
+=======
+                Toast.makeText(applicationContext, "Data saved", Toast.LENGTH_LONG).show();
+            } catch (e: Exception) {
+                Toast.makeText(applicationContext, "Data not saved", Toast.LENGTH_LONG).show();
+                e.printStackTrace()
+            }
+>>>>>>> 1f383989bf8435ba8aea245439e1b7f68f2f985d
         }
 
     }
