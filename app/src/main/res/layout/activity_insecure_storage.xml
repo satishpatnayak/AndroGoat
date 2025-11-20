@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/InsecureStorageHint"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <Button android:id="@+id/SPButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sp1"
+        android:background="#000000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button android:id="@+id/SP1Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sp2"
+        android:background="#000000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button android:id="@+id/SQLButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sql"
+        android:background="#000000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button android:id="@+id/tempButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tempFile"
+        android:background="#000000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <Button
+        android:id="@+id/SDcardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sdCard"
+        android:background="#000000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+
+</LinearLayout>
