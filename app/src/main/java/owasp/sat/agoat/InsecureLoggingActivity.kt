@@ -15,12 +15,19 @@ class InsecureLoggingActivity : AppCompatActivity() {
         val username = findViewById<EditText>(R.id.userName)
         val password = findViewById<EditText>(R.id.password)
         val loggingButton = findViewById<Button>(R.id.Logging1)
-
+        val builder = androidx.appcompat.app.AlertDialog.Builder(this)
+        builder.setTitle("Login")
         loggingButton.setOnClickListener {
-            val logMessage = "Error occurred when processing Username: ${username.text} and Password: ${password.text}"
-            Log.e("Error:", logMessage)
+            val logMessage = "Username: ${username.text} and Password: ${password.text} are verified"
+            Log.i("Info:", logMessage)
             System.out.println(logMessage)
-            Toast.makeText(this, "Error Occurred", Toast.LENGTH_LONG).show()
+            builder.setMessage("Username and Password are verified")
+            builder.setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
+            Toast.makeText(this, "Username and Password are verified", Toast.LENGTH_LONG).show()
         }
     }
 }

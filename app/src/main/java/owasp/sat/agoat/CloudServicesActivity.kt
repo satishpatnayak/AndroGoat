@@ -19,10 +19,17 @@ class CloudServicesActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_cloud_services)
         val cloudServices = findViewById<Button>(R.id.viewCloudServices)
-
+        val builder = androidx.appcompat.app.AlertDialog.Builder(this)
+        builder.setTitle("Login")
         cloudServices.setOnClickListener {
-            Toast.makeText(applicationContext, "Connected to AWS account using Access key " + aws_access_key_id + "and secret key " + aws_secret_access_key , Toast.LENGTH_LONG).show()
-            Log.d("[Info]", "Connected to AWS account using Access key " + aws_access_key_id + "and secret key " + aws_secret_access_key)
+            builder.setMessage("Connected to AWS account using Access key " + aws_access_key_id + " and secret key " + aws_secret_access_key)
+            builder.setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
+            //Toast.makeText(applicationContext, "Connected to AWS account using Access key " + aws_access_key_id + "and secret key " + aws_secret_access_key , Toast.LENGTH_LONG).show()
+            Log.d("[Info]", "Connected to AWS account using Access key " + aws_access_key_id + " and secret key " + aws_secret_access_key)
             setContentView(R.layout.activity_cloud_services_view)
         }
     }

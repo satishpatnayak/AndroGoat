@@ -16,9 +16,16 @@ class AIChatActivity : AppCompatActivity() {
 
         val promptEditText = findViewById<EditText>(R.id.promptEditText)
         val postButton = findViewById<Button>(R.id.postButton)
-
+        val builder = androidx.appcompat.app.AlertDialog.Builder(this)
+        builder.setTitle("Login")
         postButton.setOnClickListener {
-            Toast.makeText(this, "Please finish the objective", Toast.LENGTH_LONG).show()
+            builder.setMessage("Connected to OpenAI using key "+ openAIApiKey+". Please finish the objective")
+            builder.setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
+            Toast.makeText(this, "Connected to OpenAI using key"+ openAIApiKey+". Please finish the objective", Toast.LENGTH_LONG).show()
         }
     }
 }
