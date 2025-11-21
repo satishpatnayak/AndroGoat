@@ -46,7 +46,7 @@ https://mas.owasp.org/MASTG/apps/android/MASTG-APP-0001/
 ### ⚙️ Installation
 1.  **Download the APK:**
     Grab the latest compiled APK from the releases page.
-    [<img src="https://img.shields.io/badge/Download-APK-red?style=for-the-badge&logo=android"/>](https://github.com/satishpatnayak/MyTest/blob/master/AndroGoat.apk)
+    [<img src="https://img.shields.io/badge/Download-APK-red?style=for-the-badge&logo=android"/>](https://github.com/satishpatnayak/AndroGoat/releases/latest)
 
 2.  **Install on Device/Emulator:**
     Enable *Unknown Sources* on your Android device or emulator and install the APK.
