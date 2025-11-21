@@ -1,6 +1,7 @@
 <div align="center">
 
   <img src=".github/logo.PNG" alt="AndroGoat Logo" width="200" height="150" />
+
 ---
 # AndroGoat
 
