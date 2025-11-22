@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BioMetricAuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".CloudServicesActivity"
             android:exported="false" />
         <activity

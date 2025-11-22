@@ -121,6 +121,18 @@ android:textColor="@android:color/white"
                 android:layout_marginRight="15dp"/>
 
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bioauth1"
+                android:text="Biometric Authentication"
+                android:background="#000000"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
 
             <TextView
                 android:layout_width="wrap_content"

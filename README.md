@@ -87,11 +87,11 @@ https://mas.owasp.org/MASTG/apps/android/MASTG-APP-0001/
 28. Broken Cryptography
 29. Misconfigured Firebase DB
 30. Binary Patching
+31. Biometric Authentication
 ---
 ### 🔮 Future Work:
 1. Unprotected Android Components – Content Providers
 2. QR Code Scanning
-3. Fingerprint Authentication
 ---
 ### 🤝 Contributing
 We welcome contributions from the community!

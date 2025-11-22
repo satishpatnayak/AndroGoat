@@ -55,5 +55,10 @@ class MainActivity : AppCompatActivity() {
         binaryPatching.setOnClickListener {
             startActivity(Intent(this, BinaryPatchingActivity::class.java))
         }
+
+        val biopath = findViewById<Button>(R.id.bioauth1)
+        biopath.setOnClickListener {
+            startActivity(Intent(this, BioMetricAuthActivity::class.java))
+        }
     }
 }

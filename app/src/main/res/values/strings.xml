@@ -51,6 +51,7 @@ If you are looking to learn Android Application Security Testing then AndroGoat 
     <string name="BinaryPatchingHint"><b>Objective:</b> Get Access to Administration functionality</string>
     <string name="clipboard">Clipboard - Copy and Paste</string>
     <string name="clipboardHint"><b>Objectives: </b> \n 1. What is Clipboard? \n 2. Vulnerable Code \n 3. Risk associated with it </string>
+    <string name="biometricHint"><b>Objectives: </b> \n 1. Understand Authentication Types: Learn the difference between BIOMETRIC_STRONG and BIOMETRIC_WEAK \n 2. Identify which one the application is currently using \n 3. Vulnerable Code \n 4. Risk associated with it \n 5. Bypass Biometric authentication using Frida </string>
     <string name="github">Code is Available at <a href="https://github.com/satishpatnayak/AndroGoat">Github (https://github.com/satishpatnayak/AndroGoat) </a>  </string>
     <string name="mail">For any suggestions and feedback please <a href="mailto://satishkumarpatnayak@live.com?Subject=AndroGoat - Suggestions and Feedback">satishkumarpatnayak@live.com</a></string>
     <string name="twitter">Follow me on <a href="https://twitter.com/satish_patnayak">Twitter (https://twitter.com/satish_patnayak) </a></string>
