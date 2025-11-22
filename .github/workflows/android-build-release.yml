@@ -32,14 +32,17 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug
 
-      - name: Rename APK
-        run: mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/AndroGoat.apk
+      # CHANGED: Move the APK to the root directory (.) so it's easy to find later
+      - name: Rename and Move APK
+        run: mv app/build/outputs/apk/debug/app-debug.apk AndroGoat.apk
 
+      # CHANGED: Upload from the root directory
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: AndroGoat-APK
-          path: app/build/outputs/apk/debug/AndroGoat.apk
+          path: AndroGoat.apk
+          if-no-files-found: error # Fails the job if the APK path was wrong
 
   release:
     name: Create Release
@@ -52,11 +55,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: AndroGoat-APK
+          # v4 downloads to current directory by default
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: AndroGoat-debug.apk
+          files: AndroGoat.apk
           token: ${{ secrets.GITHUB_TOKEN }}
           draft: false
           prerelease: false
+          generate_release_notes: true # Adds auto-generated notes based on commits
