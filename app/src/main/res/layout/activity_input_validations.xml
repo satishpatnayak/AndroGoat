@@ -44,14 +44,15 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
-    <Button android:id="@+id/oscmdi"
+    <Button android:id="@+id/qrcode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/oscmd"
+        android:text="Input Validations - QR Code"
+        android:textColor="@android:color/white"
+        android:background="#000000"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:enabled="false"/>
+        android:layout_marginRight="15dp"/>
 
 
 </LinearLayout>

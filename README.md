@@ -15,7 +15,7 @@
 [![X Follow](https://img.shields.io/twitter/follow/AndroGoat?style=social)](https://x.com/androgoat)
 
   <p>
-    <b>Security Testers</b> • <b>Professionals</b> • <b>Enthusiasts</b> • <b>Developers</b>
+    <b>Security Testers</b> • <b>Security Professionals</b> • <b>Security Enthusiasts</b> • <b>Developers</b>
   </p>
 
   <br />
@@ -69,29 +69,29 @@ https://mas.owasp.org/MASTG/apps/android/MASTG-APP-0001/
 10. Input Validations – XSS
 11. Input Validations – SQLi
 12. Input Validations – WebView
-13. Unprotected Android Components – Activity
-14. Unprotected Android Components –Service
-15. Unprotected Android Components – Broadcast Receivers
-16. Insecure Clipboard Usage
-17. Hardcoding issues - Shopping Cart
-18. Hardcoding issues - AI
-19. Hardcoding issues - Cloud Service
-20. Network intercepting – HTTP
-21. Network intercepting – HTTPS
-22. Network intercepting – Certificate Pinning - OKHTTP3
-23. Network intercepting – Certificate Pinning - Network Security Config
-24. Misconfigured Network_Security_Config.xml
-25. Android Debuggable
-26. Android allowBackup
-27. Custom URL Scheme
-28. Broken Cryptography
-29. Misconfigured Firebase DB
-30. Binary Patching
-31. Biometric Authentication
+13. Input Validations - QR Code 
+14. Unprotected Android Components – Activity 
+15. Unprotected Android Components –Service 
+16. Unprotected Android Components – Broadcast Receivers 
+17. Insecure Clipboard Usage 
+18. Hardcoding issues - Shopping Cart 
+19. Hardcoding issues - AI 
+20. Hardcoding issues - Cloud Service 
+21. Network intercepting – HTTP 
+22. Network intercepting – HTTPS 
+23. Network intercepting – Certificate Pinning - OKHTTP3 
+24. Network intercepting – Certificate Pinning - Network Security Config 
+25. Misconfigured Network_Security_Config.xml 
+26. Android Debuggable 
+27. Android allowBackup 
+28. Custom URL Scheme 
+29. Broken Cryptography 
+30. Misconfigured Firebase DB 
+31. Binary Patching 
+32. Biometric Authentication
 ---
 ### 🔮 Future Work:
 1. Unprotected Android Components – Content Providers
-2. QR Code Scanning
 ---
 ### 🤝 Contributing
 We welcome contributions from the community!

@@ -7,7 +7,7 @@ android {
     compileSdkVersion 34
     defaultConfig {
         applicationId "owasp.sat.agoat"
-        minSdkVersion 18
+        minSdkVersion 19
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.activity:activity:1.8.0'
     implementation 'androidx.biometric:biometric:1.1.0'
-    //implementation 'androidx.biometric:biometric-ktx:1.1.0'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

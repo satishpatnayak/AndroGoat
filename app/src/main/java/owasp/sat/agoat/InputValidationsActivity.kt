@@ -26,9 +26,9 @@ class InputValidationsActivity : AppCompatActivity() {
             startActivity(Intent(this, InputValidationsWebViewURLActivity::class.java))
         }
 
-        val oscmdi = findViewById<Button>(R.id.oscmdi)
-        oscmdi.setOnClickListener {
-            startActivity(Intent(this, InputValidationsOSCMDInjectionMain2Activity::class.java))
+        val qrcode = findViewById<Button>(R.id.qrcode)
+        qrcode.setOnClickListener {
+            startActivity(Intent(this, QRCodeXSSActivity::class.java))
         }
     }
 }
