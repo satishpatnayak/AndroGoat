@@ -96,6 +96,7 @@
             android:name=".TrafficActivity"
             android:label="@string/network" />
         <activity android:name=".ContentProviderActivity" />
+
         <activity
             android:name=".EmulatorDetectionActivity"
             android:label="@string/emulator" />
@@ -135,6 +136,11 @@
         <activity
             android:name=".AIChatActivity"
             android:label="AI Chat" />
+
+        <provider
+            android:name=".ContentProviderActivity"
+            android:authorities="owasp.sat.agoat.provider.userpinsprovider"
+            android:exported="true"/>
     </application>
 
 </manifest>

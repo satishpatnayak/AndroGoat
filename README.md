@@ -55,6 +55,9 @@ https://mas.owasp.org/MASTG/apps/android/MASTG-APP-0001/
 1. Certificate Pinning using Network Security Config
 2. Hardcoding issues - AI
 3. Hardcoding issues - Cloud Service
+4. Input Validations - QR Code
+5. Unprotected Android Components – Content Providers
+6. Biometric Authentication
 ---
 ### 🐞 All Vulnerabilities covered in this app:
 1. Root Detection
@@ -73,26 +76,26 @@ https://mas.owasp.org/MASTG/apps/android/MASTG-APP-0001/
 14. Unprotected Android Components – Activity 
 15. Unprotected Android Components –Service 
 16. Unprotected Android Components – Broadcast Receivers 
-17. Insecure Clipboard Usage 
-18. Hardcoding issues - Shopping Cart 
-19. Hardcoding issues - AI 
-20. Hardcoding issues - Cloud Service 
-21. Network intercepting – HTTP 
-22. Network intercepting – HTTPS 
-23. Network intercepting – Certificate Pinning - OKHTTP3 
-24. Network intercepting – Certificate Pinning - Network Security Config 
-25. Misconfigured Network_Security_Config.xml 
-26. Android Debuggable 
-27. Android allowBackup 
-28. Custom URL Scheme 
-29. Broken Cryptography 
-30. Misconfigured Firebase DB 
-31. Binary Patching 
-32. Biometric Authentication
+17. Unprotected Android Components – Content Providers 
+18. Insecure Clipboard Usage 
+19. Hardcoding issues - Shopping Cart 
+20. Hardcoding issues - AI 
+21. Hardcoding issues - Cloud Service 
+22. Network intercepting – HTTP 
+23. Network intercepting – HTTPS 
+24. Network intercepting – Certificate Pinning - OKHTTP3 
+25. Network intercepting – Certificate Pinning - Network Security Config 
+26. Misconfigured Network_Security_Config.xml 
+27. Android Debuggable 
+28. Android allowBackup 
+29. Custom URL Scheme 
+30. Broken Cryptography 
+31. Misconfigured Firebase DB 
+32. Binary Patching 
+33. Biometric Authentication
 ---
-### 🔮 Future Work:
-1. Unprotected Android Components – Content Providers
----
+<!-- 
+### 🔮 Future Work: -->
 ### 🤝 Contributing
 We welcome contributions from the community!
 1. Create a PR
